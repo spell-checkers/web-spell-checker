@@ -77,10 +77,10 @@ WSGI_APPLICATION = 'spellChecker.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'spell_checker_db',
-        'USER': 'postgres',
-        'PASSWORD': '82069445',
-        'HOST': 'localhost',
+        'NAME': 'spell-checker-pqdb',
+        'USER': 'cherilynpg',
+        'PASSWORD': 'Wxy82069445',
+        'HOST': 'spell-checker-pgdb.cpl0xygfmfor.us-west-2.rds.amazonaws.com',
         'PORT': '5432'
     }
 }
