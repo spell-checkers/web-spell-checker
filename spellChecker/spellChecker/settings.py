@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['127.0.0.1', 'spell-checker-env.eba-ussywais.us-west-2.elasticb
 # Application definition
 
 INSTALLED_APPS = [
+    'spellCheckerApp.apps.SpellcheckerappConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -75,8 +76,12 @@ WSGI_APPLICATION = 'spellChecker.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'spell_checker_db',
+        'USER': 'postgres',
+        'PASSWORD': '82069445',
+        'HOST': 'localhost',
+        'PORT': '5432'
     }
 }
 
